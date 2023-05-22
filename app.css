@@ -1,0 +1,148 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,700);
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa {
+  position: relative;
+  display: inline;
+  width: 60px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+/* Set the default font and color */
+* {
+  font-family: "Fira Sans", sans-serif;
+  color: #333;
+}
+
+/* Use a gradient background for the body */
+body {
+  background: linear-gradient(to right, #f0f0f0, #e6e6e6);
+  margin: 0 auto;
+}
+
+html {
+  height: 100%;
+}
+
+/* Add some padding and margin to the main container */
+.hcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 5px;
+  flex: 1;
+}
+.vcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 5px;
+  flex: 1;
+}
+
+/* Use flexbox to align the header elements */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style the logo and the navigation links */
+.logo {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav a:hover {
+  color: #666;
+}
+
+/* Use a card layout for the main content */
+.card {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 15px;
+  flex: 1;
+}
+
+.card-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card-text {
+  margin-top: 10px;
+}
+
+.card-button {
+  display: block;
+  width: fit-content;
+  margin-top: auto; /* Align the button to the bottom of the card */
+}
+
+.button {
+  display: block;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #f0f0f0;
+  background-color: #98bbd8; /* Use a blue color for the button */
+  font-weight: bolder;
+}
+
+.button:hover {
+  border-color: #296996;
+}
+
+.button:active {
+  background-color: #296996;
+  color: white;
+}
+
+.graph {
+  display: flex;
+  flex: 3;
+}
+
+#graph {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#graph svg {
+  flex: 1;
+}

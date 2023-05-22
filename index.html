@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Grafo de 3 Vértices</title>
+    <link rel="icon" href="./favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./app.css" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script>
+    <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+    <script src="./generator.js"></script>
+  </head>
+  <div class="header">
+    <h1>Grafo de 3 Vértices</h1>
+  </div>
+  <div class="vcontainer">
+    <div class="hcontainer">
+      <div id="menu" class="card nav">
+        <button class="button">
+          <i class="fa fa-2x fa-upload"></i> Carregar
+        </button>
+        <button class="button"><i class="fa fa-2x fa-save"></i> Salvar</button>
+        <button class="button"><i class="fa fa-2x fa-plus"></i> Novo</button>
+      </div>
+      <div class="card graph">
+        <div id="graph"></div>
+      </div>
+    </div>
+    <div class="hcontainer">
+      <div class="card hcontainer">
+        <button class="button"><i class="fa fa-2x fa-plus"></i> Adicionar Vértice</button>
+        <button class="button"><i class="fa fa-2x fa-plus"></i> Adicionar Aresta</button>
+        <button class="button"><i class="fa fa-2x fa-minus"></i> Remover Vértice</button>
+        <button class="button"><i class="fa fa-2x fa-minus"></i> Remover Aresta</button>
+      </div>
+  </div>
+  <script>
+
+
+    var graphviz = d3.select("#graph").graphviz();
+    
+  </script>
+</html>
